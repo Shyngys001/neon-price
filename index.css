@@ -1,0 +1,63 @@
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-bottom: 1px solid #29334f;
+    background: black;
+ }
+
+.first, .second {
+    display: block;
+    width: 100%;
+}
+
+.gen {
+    display: flex;
+    margin: 0 auto;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lab {
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    font-size: 25px;
+}
+
+#estimatedCost {
+    font-size: 25px;
+    color: green;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calc {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+}
