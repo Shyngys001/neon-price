@@ -6,7 +6,7 @@ label {
 input {
     margin-top: 5px;
     margin-bottom: 10px;
-    width: 100%; /* Adjusted width to 100% */
+    width: 70%;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -14,29 +14,27 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border-bottom: 1px solid #29334f;
     background: black;
-}
+ }
 
 .first, .second {
     display: block;
     width: 100%;
-}
+} 
 
 .gen {
     display: flex;
-    flex-direction: column; /* Adjusted to column for better mobile display */
     margin: 0 auto;
 }
 
 form {
-    width: 80%; /* Adjusted form width for better mobile display */
+    width: 60%;
     margin: 0 auto;
 }
 
 .end {
     display: flex;
-    flex-direction: column; /* Adjusted to column for better mobile display */
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .lab {
@@ -59,7 +57,44 @@ form {
 
 .calc {
     margin: 0 auto;
-    width: 80%; /* Adjusted for better mobile display */
+    width: 50%;
     text-align: center;
-    font-size: 30px; /* Adjusted font size for better mobile display */
+    font-size: 50px;
 }
+
+input[type="range"] {
+    -webkit-appearance: none; /* Added to ensure proper functionality on mobile */
+    width: 70%;
+    height: 10px;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    align-items: center;
+    
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #150e0e;
+    cursor: pointer;
+    transform: translateY(-50%); 
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #8b8181;
+    height: 1px;
+}
+
