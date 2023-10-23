@@ -143,6 +143,9 @@ input[type="range"]::-webkit-slider-runnable-track {
   .label:nth-child(2) {
     width: 9.5%;
   }
+  #estimatedCost {
+    font-size: 40px;
+  }
 
 
 @media(max-width: 600px) {
@@ -155,13 +158,14 @@ input[type="range"]::-webkit-slider-runnable-track {
         margin-bottom: 50px;
     }
     .lab {
-        font-size: 15px;
+        font-size: 25px;
         width: 80%;
         text-align: start;
     }
-    label {
+    .dd {
         font-size: 15px;
     }
+
 }
 
 @media(max-height: 450px) {
