@@ -104,51 +104,31 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 1px;
 }
 
+/* Update the CSS for the radio buttons to ensure visibility on mobile devices */
 
 .radio-buttons {
     display: flex;
     flex-direction: column;
-    
+    align-items: flex-start;
+    width: 100%; /* Ensure full width on mobile devices */
 }
-  
-  .radio-buttons label {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  .radio-buttons input {
-    margin-right: 10px;
-  }
-  
-  .radio-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-  }
-  
-  .radio-buttons label {
+
+.radio-buttons label {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-  }
-  
-  .radio-buttons input {
+    font-size: 20px; /* Adjust font size for better visibility on mobile */
+}
+
+.radio-buttons input {
     margin-right: 10px;
-  }
-  
-  .label:nth-child(1) {
-    width: 10%;
-  }
-  
-  .label:nth-child(2) {
-    width: 9.5%;
-  }
-  #estimatedCost {
-    font-size: 40px;
-  }
+    height: 20px; /* Adjust the height of the radio button for better visibility */
+    width: 20px; /* Adjust the width of the radio button for better visibility */
+}
 
+/* Adjustments for mobile responsiveness */
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
     form {
         width: 90%;
     }
@@ -165,10 +145,15 @@ input[type="range"]::-webkit-slider-runnable-track {
     .dd {
         font-size: 15px;
     }
-
+    input[type="range"] {
+        width: 90%; /* Adjust the width of the range input for better visibility on mobile */
+    }
+    .radio-buttons label {
+        font-size: 18px; /* Adjust the font size of the radio button labels for better visibility on mobile */
+    }
 }
 
-@media(max-height: 450px) {
+@media (max-height: 450px) {
     .calc {
         font-size: 25px;
         width: 50%;
