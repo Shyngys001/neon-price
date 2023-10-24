@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <p class="calc">Калькулятор расчета стоимости
-        неоновой вывески</p>
+    <p class="calc">Калькулятор расчета стоимости неоновой вывески</p>
     <form id="neonForm">
         <label class="choose" for="baseType">Выберите тип основания (подложки):</label>
         <div class="radio-buttons">
@@ -20,24 +19,24 @@
                 Цветное основание
             </label>
         </div>
-        
 
         <div class="gen">
             <div class="first">
+                
                 <label class="dd" for="baseWidth">Ширина основания неоновой вывески в см.</label>
                 <input type="range" min="0" max="300" value="0" id="baseWidth" name="baseWidth">
                 <span id="baseWidthValue">50 cm</span>
-        
+
                 <label class="dd" for="neonLength">Примерная длина гибкого неона в метрах</label>
                 <input type="range" min="0" max="50" value="0" id="neonLength" name="neonLength">
                 <span id="neonLengthValue">25 meters</span>
             </div>
-           
+
             <div class="second">
                 <label class="dd" for="baseHeight">Высота основания неоновой вывески в см.</label>
                 <input type="range" min="0" max="200" value="0" id="baseHeight" name="baseHeight">
                 <span id="baseHeightValue">100 cm</span>
-        
+
                 <label class="dd" for="elementCount">Примерное количество отдельных элементов из гибкого неона</label>
                 <input type="range" min="0" max="150" value="0" id="elementCount" name="elementCount">
                 <span id="elementCountValue">75</span>
@@ -50,9 +49,7 @@
                 <p>KZT</p>
             </div>
         </div>
-        
-
     </form>
+    <script src="index.js"></script>
 </body>
-<script src="index.js"></script>
 </html>
