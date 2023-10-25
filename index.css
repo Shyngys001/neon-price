@@ -10,9 +10,7 @@
 }
 
 input {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    width: 70%;
+    width: 50%;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -65,7 +63,9 @@ form {
     margin: 0 auto;
     width: 50%;
     text-align: center;
-    font-size: 65px;
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
 }
 
 input[type="range"] {
@@ -110,20 +110,31 @@ input[type="range"]::-webkit-slider-runnable-track {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%; /* Ensure full width on mobile devices */
+    width: 0%; /* Ensure full width on mobile devices */
 }
+
+.pp {
+    width: 155px;
+    text-align: left;
+}
+.rb {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
 
 .radio-buttons label {
     display: flex;
+    width: 100px;
     align-items: center;
-    margin-bottom: 10px;
     font-size: 20px; /* Adjust font size for better visibility on mobile */
 }
 
-.radio-buttons input {
-    margin-right: 10px;
-    height: 20px; /* Adjust the height of the radio button for better visibility */
-    width: 20px; /* Adjust the width of the radio button for better visibility */
+.radio-buttons input:: {
+    background: #000;
+    height: 40px; /* Adjust the height of the radio button for better visibility */
+    width: 100%; /* Adjust the width of the radio button for better visibility */
 }
 
 /* Adjustments for mobile responsiveness */
