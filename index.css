@@ -1,7 +1,14 @@
 body {
-    background-image: url("https://avatars.mds.yandex.net/i?id=394ca32958a7642bc3c4249aac9f42bf61927c40-10350639-images-thumbs&ref=rim&n=33&w=375&h=250");
+    background-image: url("https://avatars.mds.yandex.net/i?id=5330e46476a8bb70da96d75265a3c88f1e44ca4b-10415168-images-thumbs&n=13");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    margin: 0 auto;
 }
 
 .dd {
@@ -69,6 +76,7 @@ form {
 }
 
 .calc {
+    color: #fff;
     margin: 0 auto;
     width: 50%;
     text-align: center;
