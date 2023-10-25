@@ -1,3 +1,9 @@
+body {
+    background-image: url("https://avatars.mds.yandex.net/i?id=394ca32958a7642bc3c4249aac9f42bf61927c40-10350639-images-thumbs&ref=rim&n=33&w=375&h=250");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .dd {
     display: block;
     margin-top: 20px;
@@ -33,6 +39,9 @@ input[type="range"]::-webkit-slider-thumb {
 form {
     width: 60%;
     margin: 0 auto;
+    background: rgba(192, 205, 192, 0.528);
+    border-radius: 20px;
+    padding: 15px;
 }
 
 .end {
@@ -140,6 +149,10 @@ input[type="range"]::-webkit-slider-runnable-track {
 /* Adjustments for mobile responsiveness */
 
 @media (max-width: 600px) {
+    body {
+        height: 100vh;
+
+    }
     form {
         width: 90%;
     }
@@ -149,15 +162,17 @@ input[type="range"]::-webkit-slider-runnable-track {
         margin-bottom: 50px;
     }
     .lab {
-        font-size: 25px;
-        width: 80%;
+        font-size: 15px;
+        width: 60%;
         text-align: start;
     }
     .dd {
-        font-size: 15px;
+        font-size: 12px;
+        width: 85%;
+        font-weight: 500;
     }
     input[type="range"] {
-        width: 90%; /* Adjust the width of the range input for better visibility on mobile */
+        width: 70%; /* Adjust the width of the range input for better visibility on mobile */
     }
     .radio-buttons label {
         font-size: 18px; /* Adjust the font size of the radio button labels for better visibility on mobile */
